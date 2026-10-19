@@ -1,0 +1,21 @@
+{
+  "name": "healthcare-referral-hub",
+  "version": "1.0.0",
+  "description": "Healthcare referral processing with Azure Integration Services",
+  "private": true,
+  "main": "src/functions/*.js",
+  "scripts": {
+    "test": "node tests/validateReferral.test.js",
+    "start": "func start"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "@azure/data-tables": "^13.3.2",
+    "@azure/functions": "^4.16.5",
+    "@azure/identity": "^4.14.0",
+    "@azure/service-bus": "^7.10.0"
+  },
+  "devDependencies": {
+    "azurite": "^3.37.0"
+  }
+}
