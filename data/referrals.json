@@ -1,0 +1,1883 @@
+[
+  {
+    "referralId": "SYN-REF-00001",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00002",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00003",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00004",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00005",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Metabolic syndrome X (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00006",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Diabetes mellitus type 2 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00007",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Cardiology",
+    "priority": "Routine",
+    "sourceCondition": "Hyperlipidemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00008",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Hyperglycemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00009",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Cardiology",
+    "priority": "Routine",
+    "sourceCondition": "Hypertriglyceridemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00010",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00011",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic low back pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00012",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Ischemic heart disease (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00013",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00014",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Victim of intimate partner abuse (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00015",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00016",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00017",
+    "patientId": "0fe25134-99b8-a2db-1473-0de1179180a7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00018",
+    "patientId": "438bf025-d221-e67d-2a62-de8f13f410ac",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00019",
+    "patientId": "438bf025-d221-e67d-2a62-de8f13f410ac",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Recurrent urinary tract infection (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00020",
+    "patientId": "438bf025-d221-e67d-2a62-de8f13f410ac",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Housing unsatisfactory (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00021",
+    "patientId": "438bf025-d221-e67d-2a62-de8f13f410ac",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00022",
+    "patientId": "438bf025-d221-e67d-2a62-de8f13f410ac",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00023",
+    "patientId": "438bf025-d221-e67d-2a62-de8f13f410ac",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Unemployed (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00024",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00025",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Educated to high school level (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00026",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00027",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00028",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00029",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Cardiology",
+    "priority": "Routine",
+    "sourceCondition": "Hyperlipidemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00030",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Has a criminal record (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00031",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Victim of intimate partner abuse (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00032",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Part-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00033",
+    "patientId": "329eaee7-8b85-eac5-4c33-e15cfba6c206",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Reports of violence in the environment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00034",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00035",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Only received primary school education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00036",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00037",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00038",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic sinusitis (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00039",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00040",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic low back pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00041",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Fibromyalgia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00042",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Essential hypertension (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00043",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00044",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Ischemic heart disease (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00045",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00046",
+    "patientId": "0f94334d-4830-e005-cbc6-4bb3d12f55f4",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Not in labor force (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00047",
+    "patientId": "43373b7a-fcf5-80f7-0636-416c17b1d5cc",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00048",
+    "patientId": "43373b7a-fcf5-80f7-0636-416c17b1d5cc",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Recurrent urinary tract infection (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00049",
+    "patientId": "43373b7a-fcf5-80f7-0636-416c17b1d5cc",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00050",
+    "patientId": "43373b7a-fcf5-80f7-0636-416c17b1d5cc",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00051",
+    "patientId": "43373b7a-fcf5-80f7-0636-416c17b1d5cc",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Past pregnancy history of miscarriage (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00052",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Educated to high school level (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00053",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00054",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00055",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00056",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic low back pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00057",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Fibromyalgia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00058",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Social isolation (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00059",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00060",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00061",
+    "patientId": "f48c5415-81a8-cd88-4697-201f1668dbb1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Not in labor force (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00062",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00063",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00064",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00065",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00066",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00067",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic neck pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00068",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Ischemic heart disease (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00069",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00070",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "History of coronary artery bypass grafting (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00071",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00072",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00073",
+    "patientId": "2a2b99aa-dd3f-c5ef-1e06-faf2cd970696",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00074",
+    "patientId": "6522afe9-2c0b-1332-cd22-b905b3d4f46d",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00075",
+    "patientId": "6522afe9-2c0b-1332-cd22-b905b3d4f46d",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00076",
+    "patientId": "6522afe9-2c0b-1332-cd22-b905b3d4f46d",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00077",
+    "patientId": "6522afe9-2c0b-1332-cd22-b905b3d4f46d",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00078",
+    "patientId": "6522afe9-2c0b-1332-cd22-b905b3d4f46d",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Reports of violence in the environment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00079",
+    "patientId": "6522afe9-2c0b-1332-cd22-b905b3d4f46d",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Misuses drugs (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00080",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic sinusitis (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00081",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00082",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00083",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00084",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Essential hypertension (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00085",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00086",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Metabolic syndrome X (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00087",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Has a criminal record (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00088",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Disorder of kidney due to diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00089",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Loss of teeth (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00090",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00091",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Proteinuria due to type 2 diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00092",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Polyp of colon (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00093",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "History of renal transplant (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00094",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00095",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00096",
+    "patientId": "00f8dec5-3e3f-c81f-9809-d0ebfe3940fb",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Recurrent rectal polyp (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00097",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00098",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Educated to high school level (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00099",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00100",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Victim of intimate partner abuse (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00101",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00102",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Essential hypertension (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00103",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Ischemic heart disease (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00104",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00105",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "History of coronary artery bypass grafting (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00106",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Metabolic syndrome X (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00107",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00108",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00109",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00110",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00111",
+    "patientId": "dcc6d873-6bfa-b65f-5049-b950f58ecf40",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Unhealthy alcohol drinking behavior (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00112",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Educated to high school level (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00113",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Impacted molars (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00114",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic intractable migraine without aura (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00115",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00116",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Dependent drug abuse (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00117",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00118",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic sinusitis (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00119",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00120",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00121",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Refugee (person)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00122",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic low back pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00123",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic neck pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00124",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Has a criminal record (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00125",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Sleep disorder (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00126",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Obstructive sleep apnea syndrome (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00127",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00128",
+    "patientId": "b4912e89-402b-451a-5792-9430a1adecf1",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Not in labor force (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00129",
+    "patientId": "8da99498-bcba-2c0f-b2fa-40ba8bcf965f",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00130",
+    "patientId": "8da99498-bcba-2c0f-b2fa-40ba8bcf965f",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00131",
+    "patientId": "8da99498-bcba-2c0f-b2fa-40ba8bcf965f",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00132",
+    "patientId": "8da99498-bcba-2c0f-b2fa-40ba8bcf965f",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00133",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Only received primary school education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00134",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "History of tubal ligation (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00135",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00136",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Osteoarthritis of knee (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00137",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00138",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00139",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00140",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Reports of violence in the environment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00141",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Unemployed (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00142",
+    "patientId": "197f9c94-bd47-122c-eac8-e1ab8946fa79",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00143",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00144",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Only received primary school education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00145",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00146",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic intractable migraine without aura (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00147",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Impacted molars (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00148",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Dependent drug abuse (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00149",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Past pregnancy history of miscarriage (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00150",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00151",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic low back pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00152",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Essential hypertension (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00153",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic kidney disease stage 1 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00154",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Disorder of kidney due to diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00155",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic kidney disease stage 2 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00156",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00157",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Has a criminal record (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00158",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Cardiology",
+    "priority": "Routine",
+    "sourceCondition": "Hyperlipidemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00159",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic kidney disease stage 3 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00160",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Proteinuria due to type 2 diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00161",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic kidney disease stage 4 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00162",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Awaiting transplantation of kidney (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00163",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Loss of teeth (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00164",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00165",
+    "patientId": "d817bf8e-3b50-f417-fc45-b05dbac60c95",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00166",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00167",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00168",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00169",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Social isolation (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00170",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Prediabetes (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00171",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Hematology",
+    "priority": "Routine",
+    "sourceCondition": "Anemia (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00172",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Victim of intimate partner abuse (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00173",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Essential hypertension (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00174",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Metabolic syndrome X (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00175",
+    "patientId": "8d16e2af-0372-2963-d518-72e0ce255893",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00176",
+    "patientId": "c1ae5d11-ef33-4f22-5f85-1aefc74d208a",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Risk activity involvement (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00177",
+    "patientId": "c1ae5d11-ef33-4f22-5f85-1aefc74d208a",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00178",
+    "patientId": "c1ae5d11-ef33-4f22-5f85-1aefc74d208a",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00179",
+    "patientId": "c1ae5d11-ef33-4f22-5f85-1aefc74d208a",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00180",
+    "patientId": "c1ae5d11-ef33-4f22-5f85-1aefc74d208a",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Gunshot wound (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00181",
+    "patientId": "c1ae5d11-ef33-4f22-5f85-1aefc74d208a",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Bullet wound (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00182",
+    "patientId": "b51b05c7-6212-a454-24e4-048e0a7b40d3",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00183",
+    "patientId": "39b057aa-bd4e-b8a5-9317-d6e9b87604b9",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00184",
+    "patientId": "39b057aa-bd4e-b8a5-9317-d6e9b87604b9",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00185",
+    "patientId": "39b057aa-bd4e-b8a5-9317-d6e9b87604b9",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Not in labor force (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00186",
+    "patientId": "39b057aa-bd4e-b8a5-9317-d6e9b87604b9",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00187",
+    "patientId": "186dc08a-57d1-5d3d-06a3-b6d0cb057064",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00188",
+    "patientId": "736f8652-b2c4-0289-1bbe-5f6ded60698f",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00189",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Seizure disorder (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00190",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "History of seizure (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00191",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Received higher education (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00192",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Dependent drug abuse (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00193",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Ischemic heart disease (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00194",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Abnormal findings diagnostic imaging heart+coronary circulat (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00195",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Essential hypertension (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00196",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Body mass index 30+ - obesity (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00197",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00198",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic low back pain (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00199",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Has a criminal record (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00200",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic kidney disease stage 1 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00201",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Disorder of kidney due to diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00202",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Loss of teeth (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00203",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Chronic kidney disease stage 2 (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00204",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Endocrinology",
+    "priority": "Routine",
+    "sourceCondition": "Microalbuminuria due to type 2 diabetes mellitus (disorder)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00205",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "History of appendectomy (situation)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00206",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Victim of intimate partner abuse (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00207",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Full-time employment (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00208",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Stress (finding)",
+    "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "SYN-REF-00209",
+    "patientId": "ac846920-3e79-cfa2-45ec-5a972e7325b0",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "General Medicine",
+    "priority": "Routine",
+    "sourceCondition": "Medication review due (situation)",
+    "sourceType": "Synthea-derived demo event"
+  }
+]
