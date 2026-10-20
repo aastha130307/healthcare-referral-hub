@@ -1,24 +1,9 @@
+
 const { isDuplicateEntityError } = require("../utils/handleStorageConflict");
 const { TableClient } = require("@azure/data-tables");
 const { DefaultAzureCredential } = require("@azure/identity");
 
-const accountName = process.env.TABLE_STORAGE_ACCOUNT;
-const tableName = "ReferralRecords";
-
-if (!accountName) {
-  throw new Error("TABLE_STORAGE_ACCOUNT is not configured.");
-}
-
-const endpoint = `https://${accountName}.table.core.windows.net`;
-
-const tableClient = new TableClient(
-  endpoint,
-  tableName,
-  new DefaultAzureCredential()
-);
-
-
-async function saveReferral(referral) {
+async function saveReferralWithClient(tableClient, referral) {
   const entity = {
     partitionKey: "REFERRALS",
     rowKey: referral.referralId,
@@ -33,21 +18,31 @@ async function saveReferral(referral) {
   try {
     await tableClient.createEntity(entity);
 
-    return {
-      saved: true,
-      duplicate: false
-    };
+    return { saved: true, duplicate: false };
   } catch (error) {
     if (isDuplicateEntityError(error)) {
-      return {
-        saved: false,
-        duplicate: true
-      };
+      return { saved: false, duplicate: true };
     }
 
     throw error;
   }
 }
 
+async function saveReferral(referral) {
+  const accountName = process.env.TABLE_STORAGE_ACCOUNT;
 
-module.exports = { saveReferral };
+  if (!accountName) {
+    throw new Error("TABLE_STORAGE_ACCOUNT is not configured.");
+  }
+
+  const endpoint = `https://${accountName}.table.core.windows.net`;
+  const tableClient = new TableClient(
+    endpoint,
+    "ReferralRecords",
+    new DefaultAzureCredential()
+  );
+
+  return saveReferralWithClient(tableClient, referral);
+}
+
+module.exports = { saveReferral, saveReferralWithClient };
