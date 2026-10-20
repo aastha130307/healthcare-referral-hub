@@ -1,4 +1,4 @@
-
+const { isDuplicateEntityError } = require("../utils/handleStorageConflict");
 const { TableClient } = require("@azure/data-tables");
 const { DefaultAzureCredential } = require("@azure/identity");
 
@@ -17,6 +17,7 @@ const tableClient = new TableClient(
   new DefaultAzureCredential()
 );
 
+
 async function saveReferral(referral) {
   const entity = {
     partitionKey: "REFERRALS",
@@ -29,9 +30,24 @@ async function saveReferral(referral) {
     createdAt: new Date().toISOString()
   };
 
-  await tableClient.upsertEntity(entity, "Replace");
+  try {
+    await tableClient.createEntity(entity);
 
-  return entity;
+    return {
+      saved: true,
+      duplicate: false
+    };
+  } catch (error) {
+    if (isDuplicateEntityError(error)) {
+      return {
+        saved: false,
+        duplicate: true
+      };
+    }
+
+    throw error;
+  }
 }
+
 
 module.exports = { saveReferral };

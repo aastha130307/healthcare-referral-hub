@@ -5,7 +5,7 @@
   "private": true,
   "main": "src/functions/*.js",
   "scripts": {
-  "test": "node tests/validateReferral.test.js",
+  "test": "node tests/validateReferral.test.js && node tests/handleStorageConflict.test.js",
   "start": "func start",
   "start:api": "nodemon src/api/server.js"
 },

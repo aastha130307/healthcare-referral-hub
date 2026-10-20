@@ -8,8 +8,6 @@ app.serviceBusQueue("ProcessReferralMessage", {
   queueName: "referral-events",
 
   handler: async (message, context) => {
-    context.log("Received referral message.");
-
     const result = validateReferral(message);
 
     if (!result.isValid) {
@@ -20,7 +18,14 @@ app.serviceBusQueue("ProcessReferralMessage", {
       throw new Error(errorMessage);
     }
 
-    await saveReferral(message);
+    const outcome = await saveReferral(message);
+
+    if (outcome.duplicate) {
+      context.log(
+        `Duplicate referral ignored: ${message.referralId}`
+      );
+      return;
+    }
 
     context.log(
       `Referral ${message.referralId} saved successfully to ReferralRecords.`
