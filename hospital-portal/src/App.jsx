@@ -1,6 +1,13 @@
 
 import { useState } from "react";
+import { useMsal, useIsAuthenticated } from "@azure/msal-react";
+import { InteractionRequiredAuthError } from "@azure/msal-browser";
+import { loginRequest } from "./authConfig";
 import "./App.css";
+
+// Replace with the exact Default domain from Azure Portal.
+// Do not include a trailing slash.
+const API_BASE_URL = "healthreferral-func-2026-c3ctefacgaabe0hv.malaysiawest-01.azurewebsites.net";
 
 const patients = [
   { patientId: "SYN-PAT-001", name: "Demo Patient One" },
@@ -18,6 +25,9 @@ const departments = [
 ];
 
 function App() {
+  const { instance, accounts } = useMsal();
+  const isAuthenticated = useIsAuthenticated();
+
   const [form, setForm] = useState({
     patientId: "",
     sourceDepartment: "",
@@ -27,6 +37,35 @@ function App() {
   });
 
   const [message, setMessage] = useState("");
+  const [submitting, setSubmitting] = useState(false);
+  const [referralId, setReferralId] = useState("");
+
+  const account = instance.getActiveAccount() || accounts[0];
+
+  async function handleLogin() {
+    try {
+      const result = await instance.loginPopup(loginRequest);
+      if (result.account) {
+        instance.setActiveAccount(result.account);
+      }
+      setMessage("");
+    } catch (error) {
+      console.error("Microsoft login failed:", error);
+      setMessage("Microsoft login failed. Please try again.");
+    }
+  }
+
+  async function handleLogout() {
+    try {
+      await instance.logoutPopup({
+        account,
+        mainWindowRedirectUri: window.location.origin + "/"
+      });
+    } catch (error) {
+      console.error("Logout failed:", error);
+      setMessage("Unable to sign out.");
+    }
+  }
 
   function handleChange(event) {
     const { name, value } = event.target;
@@ -37,18 +76,100 @@ function App() {
     }));
   }
 
-  function handleSubmit(event) {
+  async function getAccessToken() {
+    if (!account) {
+      throw new Error("Please sign in first.");
+    }
+
+    try {
+      const response = await instance.acquireTokenSilent({
+        ...loginRequest,
+        account
+      });
+
+      return response.accessToken;
+    } catch (error) {
+      if (error instanceof InteractionRequiredAuthError) {
+        const response = await instance.acquireTokenPopup({
+          ...loginRequest,
+          account
+        });
+
+        return response.accessToken;
+      }
+
+      throw error;
+    }
+  }
+
+  async function handleSubmit(event) {
     event.preventDefault();
+
+    setMessage("");
+    setReferralId("");
 
     if (form.sourceDepartment === form.targetDepartment) {
       setMessage("Please select different departments.");
       return;
     }
 
-    // API integration will be added in the next stage.
-    setMessage(
-      "Form validated. Azure submission is not connected yet."
-    );
+    if (API_BASE_URL.includes("YOUR_ACTUAL_FUNCTION_DOMAIN")) {
+      setMessage("Configure the Azure Function API URL first.");
+      return;
+    }
+
+    setSubmitting(true);
+
+    try {
+      const accessToken = await getAccessToken();
+
+      const response = await fetch(
+        `${API_BASE_URL}/api/referrals`,
+        {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${accessToken}`,
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            patientId: form.patientId,
+            sourceDepartment: form.sourceDepartment,
+            targetDepartment: form.targetDepartment,
+            priority: form.priority,
+            reason: form.reason
+          })
+        }
+      );
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(
+          data.error ||
+          `Referral submission failed (HTTP ${response.status})`
+        );
+      }
+
+      if (response.status !== 202 || !data.referralId) {
+        throw new Error("Unexpected response from the referral API.");
+      }
+
+      setReferralId(data.referralId);
+      setMessage("Referral queued successfully for processing.");
+
+      setForm({
+        patientId: "",
+        sourceDepartment: "",
+        targetDepartment: "",
+        priority: "Normal",
+        reason: ""
+      });
+    } catch (error) {
+      console.error("Referral submission error:", error);
+      setMessage(error.message || "Unable to submit referral.");
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -81,6 +202,7 @@ function App() {
               Submit a synthetic patient referral to another department.
             </p>
           </div>
+
           <span className="environment">Demo Environment</span>
         </header>
 
@@ -90,107 +212,139 @@ function App() {
             <p>Complete the information below.</p>
           </div>
 
-          <form onSubmit={handleSubmit}>
-            <div className="field">
-              <label htmlFor="patientId">Select Patient</label>
-              <select
-                id="patientId"
-                name="patientId"
-                value={form.patientId}
-                onChange={handleChange}
-                required
-              >
-                <option value="">Choose a patient</option>
-                {patients.map((patient) => (
-                  <option
-                    key={patient.patientId}
-                    value={patient.patientId}
-                  >
-                    {patient.name} ({patient.patientId})
-                  </option>
-                ))}
-              </select>
-            </div>
-
-            <div className="field-grid">
-              <div className="field">
-                <label htmlFor="sourceDepartment">
-                  Referring Department
-                </label>
-                <select
-                  id="sourceDepartment"
-                  name="sourceDepartment"
-                  value={form.sourceDepartment}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="">Select department</option>
-                  {departments.map((department) => (
-                    <option key={department} value={department}>
-                      {department}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div className="field">
-                <label htmlFor="targetDepartment">
-                  Receiving Department
-                </label>
-                <select
-                  id="targetDepartment"
-                  name="targetDepartment"
-                  value={form.targetDepartment}
-                  onChange={handleChange}
-                  required
-                >
-                  <option value="">Select department</option>
-                  {departments.map((department) => (
-                    <option key={department} value={department}>
-                      {department}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            </div>
-
-            <div className="field">
-              <label htmlFor="priority">Referral Priority</label>
-              <select
-                id="priority"
-                name="priority"
-                value={form.priority}
-                onChange={handleChange}
-              >
-                <option value="Normal">Normal</option>
-                <option value="High">High</option>
-                <option value="Urgent">Urgent</option>
-              </select>
-            </div>
-
-            <div className="field">
-              <label htmlFor="reason">Reason for Referral</label>
-              <textarea
-                id="reason"
-                name="reason"
-                rows="4"
-                placeholder="Enter the reason for referral..."
-                value={form.reason}
-                onChange={handleChange}
-                required
-              />
-            </div>
-
-            {message && (
-              <div className="message" role="status">
-                {message}
-              </div>
+          <div className="auth-section">
+            {isAuthenticated ? (
+              <>
+                <p>Signed in as: {account?.username}</p>
+                <button type="button" onClick={handleLogout}>
+                  Sign out
+                </button>
+              </>
+            ) : (
+              <button type="button" onClick={handleLogin}>
+                Sign in with Microsoft
+              </button>
             )}
+          </div>
 
-            <button type="submit" className="submit-button">
-              Submit Referral →
-            </button>
-          </form>
+          {isAuthenticated && (
+            <form onSubmit={handleSubmit}>
+              <div className="field">
+                <label htmlFor="patientId">Select Patient</label>
+                <select
+                  id="patientId"
+                  name="patientId"
+                  value={form.patientId}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="">Choose a patient</option>
+                  {patients.map((patient) => (
+                    <option
+                      key={patient.patientId}
+                      value={patient.patientId}
+                    >
+                      {patient.name} ({patient.patientId})
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className="field-grid">
+                <div className="field">
+                  <label htmlFor="sourceDepartment">
+                    Referring Department
+                  </label>
+                  <select
+                    id="sourceDepartment"
+                    name="sourceDepartment"
+                    value={form.sourceDepartment}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="">Select department</option>
+                    {departments.map((department) => (
+                      <option key={department} value={department}>
+                        {department}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+
+                <div className="field">
+                  <label htmlFor="targetDepartment">
+                    Receiving Department
+                  </label>
+                  <select
+                    id="targetDepartment"
+                    name="targetDepartment"
+                    value={form.targetDepartment}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="">Select department</option>
+                    {departments.map((department) => (
+                      <option key={department} value={department}>
+                        {department}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              </div>
+
+              <div className="field">
+                <label htmlFor="priority">Referral Priority</label>
+                <select
+                  id="priority"
+                  name="priority"
+                  value={form.priority}
+                  onChange={handleChange}
+                >
+                  <option value="Normal">Normal</option>
+                  <option value="High">High</option>
+                  <option value="Urgent">Urgent</option>
+                </select>
+              </div>
+
+              <div className="field">
+                <label htmlFor="reason">Reason for Referral</label>
+                <textarea
+                  id="reason"
+                  name="reason"
+                  rows="4"
+                  placeholder="Enter the reason for referral..."
+                  value={form.reason}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+
+              {message && (
+                <div className="message" role="status">
+                  {message}
+                  {referralId && (
+                    <p>Referral ID: {referralId}</p>
+                  )}
+                </div>
+              )}
+
+              <button
+                type="submit"
+                className="submit-button"
+                disabled={submitting}
+              >
+                {submitting
+                  ? "Submitting..."
+                  : "Submit Referral →"}
+              </button>
+            </form>
+          )}
+
+          {!isAuthenticated && message && (
+            <div className="message" role="status">
+              {message}
+            </div>
+          )}
         </section>
 
         <footer className="footer">
