@@ -7,11 +7,62 @@ const { validateReferral } = require("../utils/validateReferral");
 
 app.http("CreateReferral", {
   methods: ["POST"],
-  authLevel: "function",
+  authLevel: "anonymous",
   route: "referrals",
 
   handler: async (request, context) => {
     try {
+      // Azure App Service Authentication supplies these
+      // headers after validating the access token.
+      const principalId = request.headers.get(
+        "x-ms-client-principal-id"
+      );
+
+      const principalEncoded = request.headers.get(
+        "x-ms-client-principal"
+      );
+
+      if (!principalId || !principalEncoded) {
+        return {
+          status: 401,
+          jsonBody: { error: "Authentication required" }
+        };
+      }
+
+      let principal;
+
+      try {
+        principal = JSON.parse(
+          Buffer.from(principalEncoded, "base64").toString("utf8")
+        );
+      } catch {
+        return {
+          status: 401,
+          jsonBody: { error: "Invalid authentication context" }
+        };
+      }
+
+      const claims = principal.claims || [];
+
+      const scopes = claims
+        .filter((claim) =>
+          claim.typ === "scp" ||
+          claim.typ === "http://schemas.microsoft.com/identity/claims/scope"
+        )
+        .flatMap((claim) => claim.val.split(" "));
+
+      if (!scopes.includes("Referral.Submit")) {
+        return {
+          status: 403,
+          jsonBody: {
+            error: "Referral.Submit permission required"
+          }
+        };
+      }
+
+      // TODO: Restrict submission to approved demo doctors
+      // using a verified tenant identity or app role.
+
       const body = await request.json();
 
       const referral = {
