@@ -12,7 +12,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     permissions:
       contents: read
@@ -33,6 +33,14 @@ jobs:
       - name: Run tests
         run: npm test
 
+      - name: Prepare Azure Functions package
+        run: |
+          mkdir -p function-package
+          cp host.json package.json package-lock.json function-package/
+          cp -R src function-package/src
+          cd function-package
+          npm ci --omit=dev
+
       - name: Login to Azure
         uses: azure/login@v2
         with:
@@ -44,4 +52,4 @@ jobs:
         uses: Azure/functions-action@v1
         with:
           app-name: healthreferral-func-2026
-          package: '.'
+          package: './function-package'
