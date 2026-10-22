@@ -7,8 +7,9 @@ import "./App.css";
 
 // Replace with the exact Default domain from Azure Portal.
 // Do not include a trailing slash.
-const API_BASE_URL = "healthreferral-func-2026-c3ctefacgaabe0hv.malaysiawest-01.azurewebsites.net";
-
+const API_BASE_URL =
+  "https://healthreferral-func-2026-c3ctefacgaabe0hv.malaysiawest-01.azurewebsites.net";
+  
 const patients = [
   { patientId: "SYN-PAT-001", name: "Demo Patient One" },
   { patientId: "SYN-PAT-002", name: "Demo Patient Two" },

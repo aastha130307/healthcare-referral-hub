@@ -24,7 +24,7 @@ const patients = [
 
 app.http("GetPatients", {
   methods: ["GET"],
-  authLevel: "function",
+  authLevel: "anonymous",
   route: "patients",
 
   handler: async (request, context) => {

@@ -1879,5 +1879,20 @@
     "priority": "Routine",
     "sourceCondition": "Medication review due (situation)",
     "sourceType": "Synthea-derived demo event"
+  },
+  {
+    "referralId": "REF-DAY7-DUP-001",
+    "patientId": "SYN-TEST-DAY7",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Cardiology",
+    "priority": "Routine",
+    "sourceType": "Day 7 duplicate-handling test"
+  },
+  {
+    "referralId": "REF-DAY9-9001",
+    "patientId": "SYN-TEST-009",
+    "sourceDepartment": "General Medicine",
+    "targetDepartment": "Cardiology",
+    "priority": "Routine"
   }
 ]
