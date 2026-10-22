@@ -7,7 +7,7 @@ export const msalConfig = {
     authority:
       "https://login.microsoftonline.com/e22863bd-ff37-4088-a93f-aa35f09b578c",
     redirectUri:
-      "https://rghealthreferraldevbae8.z48.web.core.windows.net/",
+      "https://rghealthreferraldevbae8.z48.web.core.windows.net/auth-popup.html",
   },
   cache: {
     cacheLocation: "sessionStorage",
@@ -16,7 +16,7 @@ export const msalConfig = {
 
 export const loginRequest = {
   scopes: [
-    "api://604e8ed2-d61d-4657-b3a8-fa0f576c0211/Referral.Submit",
+    "api://8e036c40-6f89-4d3e-af28-2871c26773fb/Referral.Submit",
   ],
 };
 
