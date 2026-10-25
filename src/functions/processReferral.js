@@ -2,6 +2,9 @@
 const { app } = require("@azure/functions");
 const { validateReferral } = require("../utils/validateReferral");
 const { saveReferral } = require("../services/referralStorage");
+const {
+  publishReferralProcessed
+} = require("../services/referralEventPublisher");
 
 app.serviceBusQueue("ProcessReferralMessage", {
   connection: "ServiceBusConnection",
@@ -29,6 +32,12 @@ app.serviceBusQueue("ProcessReferralMessage", {
 
     context.log(
       `Referral ${message.referralId} saved successfully to ReferralRecords.`
+    );
+
+    const event = await publishReferralProcessed(message);
+
+    context.log(
+      `ReferralProcessed event published: ${event.referralId}`
     );
   }
 });
