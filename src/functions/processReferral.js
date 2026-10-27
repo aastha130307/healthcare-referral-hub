@@ -11,15 +11,25 @@ app.serviceBusQueue("ProcessReferralMessage", {
   queueName: "referral-events",
 
   handler: async (message, context) => {
-    const result = validateReferral(message);
+    
+const result = validateReferral(message);
 
-    if (!result.isValid) {
-      const errorMessage =
-        `Invalid referral. Missing fields: ${result.missingFields.join(", ")}`;
+if (!result.isValid) {
+  const errorMessage =
+    `Invalid referral. Missing fields: ${result.missingFields.join(", ")}`;
 
-      context.error(errorMessage);
-      throw new Error(errorMessage);
-    }
+  context.error(
+    JSON.stringify({
+      errorType: "PERMANENT_VALIDATION_ERROR",
+      referralId: message?.referralId ?? "unknown",
+      missingFields: result.missingFields,
+      message: errorMessage
+    })
+  );
+
+  throw new Error(errorMessage);
+}
+
 
     const outcome = await saveReferral(message);
 
