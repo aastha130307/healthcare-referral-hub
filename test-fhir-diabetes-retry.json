@@ -1,0 +1,28 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Patient",
+        "id": "TEST-PAT-001"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Condition",
+        "id": "TEST-COND-001",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "code": "active"
+            }
+          ]
+        },
+        "code": {
+          "text": "Diabetes mellitus"
+        }
+      }
+    }
+  ]
+}

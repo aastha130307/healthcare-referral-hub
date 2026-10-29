@@ -8,7 +8,7 @@ import "./App.css";
 // Replace with the exact Default domain from Azure Portal.
 // Do not include a trailing slash.
 const API_BASE_URL =
-  "https://healthreferral-func-2026-c3ctefacgaabe0hv.malaysiawest-01.azurewebsites.net";
+  "https://healthreferral-apim-2026.azure-api.net/referrals/referrals";
   
 const patients = [
   { patientId: "SYN-PAT-001", name: "Demo Patient One" },
@@ -124,8 +124,7 @@ function App() {
     try {
       const accessToken = await getAccessToken();
 
-      const response = await fetch(
-        `${API_BASE_URL}/api/referrals`,
+      const response = await fetch(API_BASE_URL,
         {
           method: "POST",
           headers: {
