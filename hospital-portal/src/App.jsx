@@ -1,20 +1,19 @@
-
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMsal, useIsAuthenticated } from "@azure/msal-react";
 import { InteractionRequiredAuthError } from "@azure/msal-browser";
 import { loginRequest } from "./authConfig";
 import "./App.css";
 
-// Replace with the exact Default domain from Azure Portal.
-// Do not include a trailing slash.
+const PATIENTS_API_URL =
+  "https://healthreferral-apim-2026.azure-api.net/referrals/patients";
 const API_BASE_URL =
   "https://healthreferral-apim-2026.azure-api.net/referrals/referrals";
+
+const [patients, setPatients] = useState([]);
+const [patientsLoading, setPatientsLoading] = useState(false);
+const [patientsError, setPatientsError] = useState("");
   
-const patients = [
-  { patientId: "SYN-PAT-001", name: "Demo Patient One" },
-  { patientId: "SYN-PAT-002", name: "Demo Patient Two" },
-  { patientId: "SYN-PAT-003", name: "Demo Patient Three" }
-];
+
 
 const departments = [
   "Cardiology",
@@ -42,6 +41,63 @@ function App() {
   const [referralId, setReferralId] = useState("");
 
   const account = instance.getActiveAccount() || accounts[0];
+
+  useEffect(() => {
+  let active = true;
+
+  async function loadPatients() {
+    if (!isAuthenticated || !account) {
+      setPatients([]);
+      return;
+    }
+
+    setPatientsLoading(true);
+    setPatientsError("");
+
+    try {
+      const accessToken = await getAccessToken();
+
+      const response = await fetch(PATIENTS_API_URL, {
+        method: "GET",
+        headers: {
+          Authorization: `Bearer ${accessToken}`
+        }
+      });
+
+      const data = await response.json().catch(() => ({}));
+
+      if (!response.ok) {
+        throw new Error(
+          data.error || `Unable to load patients (HTTP ${response.status})`
+        );
+      }
+
+      if (!Array.isArray(data.patients)) {
+        throw new Error("The patients API returned an unexpected response.");
+      }
+
+      if (active) {
+        setPatients(data.patients);
+      }
+    } catch (error) {
+      console.error("Patient loading error:", error);
+
+      if (active) {
+        setPatientsError(error.message || "Unable to load patients.");
+      }
+    } finally {
+      if (active) {
+        setPatientsLoading(false);
+      }
+    }
+  }
+
+  loadPatients();
+
+  return () => {
+    active = false;
+  };
+}, [isAuthenticated, account]);
 
   async function handleLogin() {
     try {
@@ -238,16 +294,26 @@ function App() {
                   onChange={handleChange}
                   required
                 >
-                  <option value="">Choose a patient</option>
-                  {patients.map((patient) => (
-                    <option
-                      key={patient.patientId}
-                      value={patient.patientId}
-                    >
-                      {patient.name} ({patient.patientId})
-                    </option>
-                  ))}
+                  <option value="">
+  {patientsLoading ? "Loading patients..." : "Choose a patient"}
+</option>
+
+{patients.map((patient) => (
+  <option key={patient.patientId} value={patient.patientId}>
+    {patient.name} ({patient.patientId})
+  </option>
+))}
                 </select>
+
+                {patientsError && (
+  <p className="message" role="alert">
+    {patientsError}
+  </p>
+)}
+
+{!patientsLoading && !patientsError && patients.length === 0 && (
+  <p>No patients are currently available.</p>
+)}
               </div>
 
               <div className="field-grid">

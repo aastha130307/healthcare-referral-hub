@@ -1,26 +1,6 @@
-
 const { app } = require("@azure/functions");
 
-const patients = [
-  {
-    patientId: "SYN-PAT-001",
-    name: "Demo Patient One",
-    age: 45,
-    gender: "Female"
-  },
-  {
-    patientId: "SYN-PAT-002",
-    name: "Demo Patient Two",
-    age: 52,
-    gender: "Male"
-  },
-  {
-    patientId: "SYN-PAT-003",
-    name: "Demo Patient Three",
-    age: 38,
-    gender: "Female"
-  }
-];
+const patients = require("../../data/patients.json");
 
 app.http("GetPatients", {
   methods: ["GET"],
@@ -28,7 +8,12 @@ app.http("GetPatients", {
   route: "patients",
 
   handler: async (request, context) => {
-    context.log("Fetching synthetic patients");
+    context.log(
+      JSON.stringify({
+        event: "PatientsFetched",
+        count: patients.length
+      })
+    );
 
     return {
       status: 200,
