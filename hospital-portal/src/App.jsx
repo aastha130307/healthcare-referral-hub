@@ -9,9 +9,7 @@ const PATIENTS_API_URL =
 const API_BASE_URL =
   "https://healthreferral-apim-2026.azure-api.net/referrals/referrals";
 
-const [patients, setPatients] = useState([]);
-const [patientsLoading, setPatientsLoading] = useState(false);
-const [patientsError, setPatientsError] = useState("");
+
   
 
 
@@ -25,8 +23,13 @@ const departments = [
 ];
 
 function App() {
-  const { instance, accounts } = useMsal();
+   const { instance, accounts } = useMsal();
   const isAuthenticated = useIsAuthenticated();
+  
+  const [patients, setPatients] = useState([]);
+const [patientsLoading, setPatientsLoading] = useState(false);
+const [patientsError, setPatientsError] = useState("");
+ 
 
   const [form, setForm] = useState({
     patientId: "",
